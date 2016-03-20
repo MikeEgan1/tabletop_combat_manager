@@ -6,10 +6,6 @@ from tabletop_combat_manager.api.v1.game import game
 
 app.register_blueprint(game)
 
-@app.route('/')
-def index():
-    return "Hello, world!"
-
 @app.errorhandler(404)
 def not_found(error):
     return make_response(jsonify({'error': 'Not found'}), 404)
