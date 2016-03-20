@@ -5,4 +5,4 @@ class Builder(object):
         pass
 
     def build(self):
-        return new Game()
+        return Game()
