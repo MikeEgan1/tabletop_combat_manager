@@ -1,4 +1,4 @@
-#!flask/bin/python
+#!usr/bin/python
 
 app = Flask(__name__)
 
