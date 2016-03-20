@@ -12,5 +12,5 @@ def new_game():
     builder = Builder()
 
     game = builder.build()
-    return jsonify({'id' : game.game_id()})
+    return jsonify(game.json())
 
