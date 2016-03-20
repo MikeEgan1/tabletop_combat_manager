@@ -1,4 +1,4 @@
-from tabletop_combat_manager.game import Game
+from tabletop_combat_manager.game.game import Game
 
 class Builder(object):
     def __init__(self):
