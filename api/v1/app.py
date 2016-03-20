@@ -2,7 +2,7 @@ from flask import Flask, make_response, jsonify
 
 app = Flask(__name__)
 
-from api.v1.game import game
+from tabletop_combat_manager.api.v1.game import game
 
 app.register_blueprint(game)
 
