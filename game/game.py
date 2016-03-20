@@ -1,9 +1,10 @@
 import random
 import json
+from tabletop_combat_manager.utils import create_hash
 
 class Game(object):
     def __init__(self):
-        self.game_id = ''.join(random.choice('0123456789ABCDEF') for i in xrange(16))
+        self.game_id = create_hash()
 
     def json(self):
         return self.__dict__
