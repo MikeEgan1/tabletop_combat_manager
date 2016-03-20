@@ -1,5 +1,5 @@
 from flask import Flask, Blueprint, jsonify
-from tabletop_combat_manager.game import create_new_game
+from tabletop_combat_manager.game.builder import Builder
 
 game = Blueprint('game', __name__)
 
@@ -9,5 +9,8 @@ def index():
 
 @game.route('/game/new_game')
 def new_game():
-    return jsonify({'id' : create_new_game()})
+    builder = Builder()
+
+    game = builder.build()
+    return jsonify({'id' : game.game_id()})
 
