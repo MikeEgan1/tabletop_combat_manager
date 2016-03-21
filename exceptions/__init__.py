@@ -1,0 +1,2 @@
+class TypeCreatureTypeNotSetException():
+    pass
