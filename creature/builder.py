@@ -1,5 +1,6 @@
 from tabletop_combat_manager.monster.monster import Monster
 from tabletop_combat_manager.player.player import Player
+from tabletop_combat_manager.exceptions import TypeCreatureTypeNotSetException
 
 class Builder(object):
     def __init__(self):
@@ -17,8 +18,8 @@ class Builder(object):
             creature = Player(self.name, self.initiative)
         elif self.type == "monster":
             creature = Monster(self.name, self.initiative)
-        else
-            raise
+        else:
+            raise TypeCreatureTypeNotSetException("Creature type not valid")
 
 
 

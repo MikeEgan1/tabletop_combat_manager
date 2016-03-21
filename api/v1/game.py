@@ -14,3 +14,6 @@ def new_game():
     game = builder.build()
     return jsonify(game.json())
 
+@game.route('/game/<string:game_id>/add_player')
+def add_player():
+    pass
