@@ -1,5 +1,5 @@
-from tabletop_game_manager.models.game import Model
-from tabletop_game_manager.game.adapter import Adapter
+from tabletop_combat_manager.models.game import Model
+from tabletop_combat_manager.game.adapter import Adapter
 
 class Creator(object):
     def __init__(self):
