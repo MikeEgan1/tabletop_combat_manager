@@ -1,4 +1,4 @@
-from redis import Redis
+import redis
 from tabletop_combat_manager.config import RedisConfig
 
 class Service(object):
