@@ -7,6 +7,5 @@ class Builder(object):
     def setGameId(self, game_id):
         self.game_id = game_id
 
-
     def build(self):
-        return Game(game_id)
+        return Game(self.game_id)

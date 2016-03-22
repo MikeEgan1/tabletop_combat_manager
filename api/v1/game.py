@@ -16,4 +16,3 @@ def new_game():
 
 @game.route('/game/<string:game_id>/add_player')
 def add_player():
-    pass
