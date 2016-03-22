@@ -15,4 +15,7 @@ def new_game():
     return jsonify(game.json())
 
 @game.route('/game/<string:game_id>/add_player')
-def add_player():
+def add_player(game_id, request):
+
+
+    return jsonify(game.json())

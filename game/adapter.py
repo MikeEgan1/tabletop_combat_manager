@@ -1,4 +1,3 @@
-from tabletop_combat_manager.game.game import Game
 from tabletop_combat_manager.game.builder import Builder
 
 class Adapter(object):
