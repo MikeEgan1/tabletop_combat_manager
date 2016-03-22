@@ -1,4 +1,4 @@
-from tabletopmbat_manager.models.redis import Redis
+from tabletop_combat_manager.models.redis import Redis
 
 class Model(object):
     def __init__(self):
